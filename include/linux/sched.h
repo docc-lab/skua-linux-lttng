@@ -1089,7 +1089,9 @@ struct task_struct {
 #endif
 
 	/* Jaeger context fields */
-	int jaeger_test_field;
+	uint64_t jaeger_trace_id;
+	uint64_t jaeger_parent_id;
+	uint64_t jaeger_span_id;
 
 	/*
 	 * New fields for task_struct should be added above here, so that
