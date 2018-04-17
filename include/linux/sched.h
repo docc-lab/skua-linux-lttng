@@ -1092,6 +1092,7 @@ struct task_struct {
 	uint64_t jaeger_trace_id;
 	uint64_t jaeger_parent_id;
 	uint64_t jaeger_span_id;
+	uint64_t jaeger_padding;
 
 	/*
 	 * New fields for task_struct should be added above here, so that
